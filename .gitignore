@@ -1,0 +1,8 @@
+cache/
+venv/
+.idea/
+__pycache__/
+test.py
+*.json
+*.pdf
+test*/

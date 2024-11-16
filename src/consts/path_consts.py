@@ -1,0 +1,6 @@
+CACHE_PATH = "cache/"
+PDF_PATH = CACHE_PATH + "documents/"
+IMG_PATH = CACHE_PATH + "images/"
+TABLES_PATH = CACHE_PATH + "tables/"
+JSON_PATH = CACHE_PATH + "json/"
+WEIGHTS_PATH = "src/weights/"

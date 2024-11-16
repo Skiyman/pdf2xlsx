@@ -1,0 +1,26 @@
+version: '3.4'
+
+volumes:
+  redis-data:
+
+networks:
+  net:
+
+services:
+  redis:
+    container_name: redis
+    hostname: redis
+    image: redis
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    restart: always
+    command: redis-server
+    volumes:
+      - redis-data:/var/lib/redis
+    networks:
+      - net
+    ports:
+      - "6379:6379"
+
